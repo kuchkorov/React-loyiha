@@ -1,6 +1,5 @@
 import { configureStore } from "@reduxjs/toolkit";
-import countReducer from "../components/reducers/countSlice";
-
+import AuthSlice from '../slices/auth'
 export default configureStore({
-    reducer: {countReducer, devTools: process.env.NODE_ENV !== 'production'}
+    reducer: { AuthSlice, devTools: process.env.NODE_ENV !== 'production'}
 })
